@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+      html {
+        display: table;
+        margin: auto;
+        height: 100%;
+      }
+
+      body {
+        background-color: rgb(36, 31, 31);
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        text-align: center;
+        color:#ffffff;
+        font-family:'Times New Roman', Times, serif;
+      }
+
+      canvas {
+        border: 1px solid rgb(255, 255, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SCORE</h1>
+    <h2 id="score"></h2>
+    <canvas id="canvas" width="600" height="600"></canvas>
+    <h2 id="hiddenHeading" style="display: none;">GAME OVER!</h2>
+    <h3 id="hiddenHeading2" style="display: none; color:grey;">REFRESH PAGE (F5) TO PLAY AGAIN</h3>
+    <script type="application/javascript" src="index.js"></script>
+   
+  </body>
+</html>
