@@ -260,8 +260,6 @@ function gameLoop() {
     snake.getHead()[0] < -1 ||
     snake.getHead()[1] < -1
   ) {
-    console.log(snake.getHead()[0]);
-    console.log(snake.getHead()[1]);
     clearInterval(gameInterval);
     const heading = document.getElementById("hiddenHeading");
     heading.style.display = "block";
