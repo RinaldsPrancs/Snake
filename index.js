@@ -224,7 +224,7 @@ function generateAppleCoords(bigArr) {
   return coords;
 }
 drawCells();
-let apple = { x: 13, y: 8 };
+let apple = { x: 0, y: 0 };
 drawApple(apple.x, apple.y);
 drawSnake();
 let direction = "d";
@@ -257,9 +257,11 @@ function gameLoop() {
     selfEat() ||
     snake.getHead()[0] > cells * cellSize ||
     snake.getHead()[1] > cells * cellSize ||
-    snake.getHead()[0] < 0 ||
-    snake.getHead()[1] < 0
+    snake.getHead()[0] < -1 ||
+    snake.getHead()[1] < -1
   ) {
+    console.log(snake.getHead()[0]);
+    console.log(snake.getHead()[1]);
     clearInterval(gameInterval);
     const heading = document.getElementById("hiddenHeading");
     heading.style.display = "block";
